@@ -16,3 +16,17 @@ function factorialFunc(number){
 
 const factorialCheck = factorialFunc(7);
 console.log(factorialCheck);
+
+// factorial using while loop and decrimenting
+function getFactorial (number){
+    let facto = 1;
+    let i = number;
+    while(i >= 1){
+        facto =  i * facto;
+        i--;
+    }
+    return facto;
+}
+
+const factorialGet = getFactorial(7);
+console.log(factorialGet);
